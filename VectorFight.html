@@ -76,8 +76,6 @@ class Human {
 
         // Realistic Human Representation (Simulated Sprite)
         ctx.fillStyle = this.color; 
-        // Note: For real animation, use ctx.drawImage(this.image, sx, sy, sw, sh, x, y, w, h)
-        // Here we use a stylized human shape until you add your image URLs
         ctx.fillStyle = this.isAI ? '#4facfe' : '#ff4b2b';
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
         
@@ -126,7 +124,7 @@ function drawModernIndia() {
     ctx.fillRect(200, 100, 150, 476);
     ctx.fillRect(600, 50, 200, 526);
 
-    // Integration of "Shashwat" in the scenery
+    //
     ctx.save();
     ctx.font = '80px Impact';
     ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
